@@ -2,14 +2,6 @@
 
 I’m Burhanudin Nugroho, a software engineer focused on building scalable consumer products. I helped build super-app payment experiences similar to GoPay that now serve more than 50 million people, and I bring the same standards for reliability, experimentation, and observability into every project—including Aurora Random Image.
 
-# Aurora Random Image
-
-![coverage][coverage_badge]
-[![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
-[![License: MIT][license_badge]][license_link]
-
-Aurora Random Image is a cross-platform Flutter experience that fetches beautiful, unexpected imagery to inspire ideation and onboarding flows. The project started from the [Very Good CLI][very_good_cli_link] scaffolding and has grown into a production-ready codebase with opinionated tooling, CI-ready coverage, and batteries-included localization.
-
 ---
 
 ## Monorepo Architecture 🧱
@@ -29,6 +21,17 @@ Within `packages/` you’ll find dedicated SDKs surfaced from this project:
 Keeping everything in one repo keeps versioning atomic, makes refactors safer, and allows every package to reuse the same linting and testing pipeline.
 
 ---
+
+## Problem-solving approach
+
+We lean on a few principles to keep the experience smooth and maintainable:
+
+1. **Progressive enhancement** – ship a functional baseline first, then layer polish (animated gradients, palette-aware theming, bespoke transitions) once UX is validated.
+2. **Async isolation** – move heavy work (palette extraction, caching) off the UI isolate via `compute` or repositories so that animations stay jitter-free even on mid-tier hardware.
+3. **Deterministic state** – model UI flows through Bloc so every state has the data it needs (image, palette, error), which makes rendering predictable and testable.
+4. **Tight feedback loops** – pair UI tweaks with visual artifacts (GIFs) and regression tests, which helps reviewers understand the changes and trust the implementation.
+
+This process keeps the focus on user experience while giving reviewers insight into the technical reasoning behind each iteration
 
 ## Running the App 🚀
 
