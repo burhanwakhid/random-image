@@ -1,0 +1,27 @@
+name: infrastructure_provider
+description: A starting point for Dart libraries or applications.
+version: 1.0.0
+publish_to: none
+# repository: https://github.com/my_org/my_repo
+
+environment:
+  sdk: ^3.9.2
+
+# Add regular dependencies here.
+dependencies:
+  # path: ^1.9.0
+  dio: ^5.9.0
+  get_it: ^9.0.5
+
+  network_sdk:
+    path: ../network_sdk
+  persistence_sdk:
+    path: ../persistence_sdk
+  auth_sdk:
+    path: ../auth_sdk
+  service_provider:
+    path: ../service_provider
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.6

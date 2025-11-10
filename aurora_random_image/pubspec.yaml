@@ -1,0 +1,48 @@
+name: aurora_random_image
+description: My new Flutter app
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ^3.9.0
+  flutter: ^3.35.0
+
+dependencies:
+  auth_sdk:
+    path: ../packages/auth_sdk
+  auto_route: ^10.2.0
+  bloc: ^9.0.1
+  equatable: ^2.0.7
+  palette_generator_master: ^1.0.1
+  cached_network_image: ^3.4.1
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.1.1
+  flutter_localizations:
+    sdk: flutter
+  infrastructure_provider:
+    path: ../packages/infrastructure_provider
+  intl: ^0.20.2
+  jsn_ui:
+    path: ../packages/jsn_ui
+  network_sdk:
+    path: ../packages/network_sdk
+  persistence_sdk:
+    path: ../packages/persistence_sdk
+  random_images:
+    path: ../random_images
+  service_provider:
+    path: ../packages/service_provider
+
+dev_dependencies:
+  auto_route_generator: ^10.2.5
+  bloc_test: ^10.0.0
+  build_runner: ^2.4.11
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.4
+
+flutter:
+  generate: true
+  uses-material-design: true
