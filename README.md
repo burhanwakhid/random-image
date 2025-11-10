@@ -22,6 +22,8 @@ Keeping everything in one repo keeps versioning atomic, makes refactors safer, a
 
 ---
 
+![Random Image Demo](/screenshot/random_image_demo.gif)
+
 ## Problem-solving approach
 
 We lean on a few principles to keep the experience smooth and maintainable:
